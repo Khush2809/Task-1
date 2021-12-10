@@ -1,0 +1,84 @@
+#header {
+  .row {
+    background-color: #ff6b81;
+    --bs-gutter-x: 0 !important;
+  }
+
+  .logo {
+    width: 160px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .get-it-now {
+    text-transform: capitalize;
+    width: 200px;
+    margin-right: 30px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border: 3px solid white;
+    color: white;
+  }
+}
+#home {
+  padding-top: 300px;
+  background-color: #ff6b81;
+  .wordings {
+    // padding: 100px;
+    width: 500px;
+    // margin-left: 110px;
+    color: white;
+  }
+  .heading {
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .tagline {
+    font-size: 19px;
+  }
+  .home-img {
+    margin-top: -150px;
+    // margin-right: 160px;
+    width: 800px;
+  }
+  .buttons {
+    padding-top: 50px;
+  }
+  .app-store {
+    text-transform: capitalize;
+    width: 200px;
+    margin-right: 30px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border: 3px solid white;
+    background-color: white;
+    color: #ff6b81;
+  }
+  .play-store {
+    text-transform: capitalize;
+    width: 200px;
+    margin-right: 30px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border: 3px solid white;
+    color: white;
+    background-color: #ff6b81;
+  }
+}
