@@ -4,6 +4,7 @@ import "./../scss/custom.scss";
 
 const DataFetching = () => {
   const [users, setUsers] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   const loadUsers = async () => {
     const response = await fetch("https://reqres.in/api/users?page=1");
@@ -11,11 +12,17 @@ const DataFetching = () => {
     const array = data.data;
     console.log(array);
     setUsers(array);
+    setLoading(false);
   };
 
   return (
-    <div>
-      <button onClick={loadUsers}>GET USERS</button>
+    <div id="task2">
+      <nav>
+        <h1 style={{ marginLeft: "10px" }}>LGM-VIP</h1>
+        <button onClick={loadUsers} style={{ marginRight: "10px" }}>
+          GET USERS
+        </button>
+      </nav>{" "}
       <Container id="fetchedData" className="d-flex justify-content-center">
         <ul>
           {users.map(({ id, avatar, first_name, last_name, email }) => (

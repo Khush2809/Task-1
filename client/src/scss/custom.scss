@@ -89,9 +89,27 @@
     background-color: #ff6b81;
   }
 }
+#task2 {
+  nav {
+    height: 10vh;
+    background-color: #002b54;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    align-items: center;
+    button {
+      padding: 0.5%;
+      border: 2px solid #002b54;
+      border-radius: 5px;
+      width: 10%;
+      font-weight: 700;
+    }
+  }
+}
 #fetchedData {
   border-radius: 10px;
-  background-color: #ffe6ee;
+  background-color: #f4c2c2;
+  margin-top: 50px;
   .flip-card {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -130,7 +148,7 @@
 
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: #1a86a8;
     border-radius: 5px;
     color: black;
   }
