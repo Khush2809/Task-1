@@ -12,14 +12,26 @@ const DataFetching = () => {
     const array = data.data;
     console.log(array);
     setUsers(array);
+  };
+
+  const Loading = () => {
     setLoading(true);
+    {
+      isLoading ? (
+        loadUsers()
+      ) : (
+        <div class="spinner-grow text-dark" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      );
+    }
   };
 
   return (
     <div id="task2">
       <nav>
         <h1 style={{ marginLeft: "10px" }}>LGM-VIP</h1>
-        <button onClick={loadUsers} style={{ marginRight: "10px" }}>
+        <button onClick={Loading} style={{ marginRight: "10px" }}>
           GET USERS
         </button>
       </nav>{" "}
