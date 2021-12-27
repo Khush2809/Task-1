@@ -4,7 +4,7 @@ import "./../scss/custom.scss";
 
 const DataFetching = () => {
   const [users, setUsers] = useState([]);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
 
   const loadUsers = async () => {
     const response = await fetch("https://reqres.in/api/users?page=1");
@@ -12,7 +12,7 @@ const DataFetching = () => {
     const array = data.data;
     console.log(array);
     setUsers(array);
-    setLoading(false);
+    setLoading(true);
   };
 
   return (
@@ -40,10 +40,8 @@ const DataFetching = () => {
                       marginTop: "15px",
                     }}
                   />
-                  <div className="name">
-                    {first_name}
-                    {last_name}
-                  </div>
+                  <div className="name">{first_name}</div>
+                  <div className="name1">{last_name}</div>
                 </div>
                 <div class="flip-card-back">
                   <p>
